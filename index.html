@@ -1,28 +1,26 @@
 
 <script>
 function myFunction() {
-  var x, text;
+  var x, y, text;
 
   // Get the value of the input field with id="numb"
-  x = document.getElementById("numb").value;
-
-  // If x is Not a Number or less than one or greater than 10
-  if (isNaN(x) || x < 1 || x > 10) {
-    text = "Input not valid";
-  } else {
-    text = "Input OK";
-  }
-  document.getElementById("demo").innerHTML = text;
+  x = document.getElementById("fname").value;
+y=document.getElementById("lname").value;
+ text="You entered "+x+"  "+y 
+  document.getElementById("result").innerHTML = text;
 }
 </script>
 <h1>Automation Practice</h1>
 
  <form>
-  First name: <input type="text" name="fname"><br>
+  First name: <input type="text" id="fname" name="fname"><br>
    <br>
-  Last name: <input type="text" name="lname"><br>
+  Last name: <input type="text" id="lastname" name="lname"><br>
   <br>
   <br>
   <input type="submit" value="Submit" onclick="myFunction()">
+   <br>
+   <br>
+   <h1 id="result"><h1>
 </form> 
 
