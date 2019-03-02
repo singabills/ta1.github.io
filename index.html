@@ -21,7 +21,8 @@ for (var i = 0, length = radios.length; i < length; i++)
  
  
  ;
-document.getElementById("result").innerHTML=text1+"\n and gender = "+text2;
+ var checkedBoxes = document.querySelectorAll('input[type=checkbox]:checked');
+document.getElementById("result").innerHTML=text1+"\n and gender = "+text2+"   "+checkedBoxes;
 }
 </script>
 <h1>Automation Practice</h1>
