@@ -23,8 +23,11 @@ for (var i = 0, length = radios.length; i < length; i++)
  ;
 var text3=document.getElementById("check1").checked;
  var text4=document.getElementById("check2").checked
- 
-document.getElementById("result").innerHTML=text1+"\n and gender = "+text2+"   Bike Selected = "+text3 +"Car Selected = "+text4;
+ var e = document.getElementById("selectlist");
+var text5 = e.options[e.selectedIndex].text;
+document.getElementById("result").innerHTML=text1+"\n and gender = "+text2+"   Bike Selected = "+text3 +"Car Selected = "+text4+" "+text5;
+
+
 }
 </script>
 <h1>Automation Practice</h1>
@@ -48,7 +51,7 @@ document.getElementById("result").innerHTML=text1+"\n and gender = "+text2+"   B
    <br>
    <br>
   
-   <select>
+   <select id="selectlist">
   <option value="volvo">Volvo</option>
   <option value="saab">Saab</option>
   <option value="mercedes">Mercedes</option>
