@@ -1,16 +1,16 @@
 
 <script>
 function myFunction() {
-document.getElementById("result").innerHTML = "Welcome";
+document.getElementById("result").innerHTML = "You submitted "+ document.getElementById("fname").innerHTML;
 
 }
 </script>
 <h1>Automation Practice</h1>
 
  <form onsubmit="myFunction(); return false;">
-  First name: <input type="text" id='fname' name="fname"><br>
+  First name: <input type="text" id="fname" name="fname"><br>
    <br>
-  Last name: <input type="text" id='lastname' name="lname"><br>
+  Last name: <input type="text" id="lastname" name="lname"><br>
     <br>
     <br>
     <input type="radio" name="gender" value="male" checked> Male<br>
