@@ -1,18 +1,12 @@
 
 <script>
 function myFunction() {
-  var x, y, text;
 
-  // Get the value of the input field with id="numb"
-  x = document.getElementById("fname").value;
-y=document.getElementById("lname").value;
- text="You entered " ;
-  document.getElementById("result").innerHTML = text;
 }
 </script>
 <h1>Automation Practice</h1>
 
- <form>
+ <form onsubmit="myFunction(); return false;">
   First name: <input type="text" id='fname' name="fname"><br>
    <br>
   Last name: <input type="text" id='lastname' name="lname"><br>
