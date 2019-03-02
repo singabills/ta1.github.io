@@ -23,12 +23,12 @@ for (var i = 0, length = radios.length; i < length; i++)
  ;
  var checkedBoxes = document.querySelectorAll('input[type=checkbox]:checked');
  
- result = [];
+ var result1 = [];
     for (var i = 0; i < checkedBoxes.length; i++) {
         result.push(checkedBoxes[i].textContent);
     }
  
-document.getElementById("result").innerHTML=text1+"\n and gender = "+text2+"   "+result;
+document.getElementById("result").innerHTML=text1+"\n and gender = "+text2+"   "+result1;
 }
 </script>
 <h1>Automation Practice</h1>
