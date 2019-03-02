@@ -21,10 +21,11 @@ for (var i = 0, length = radios.length; i < length; i++)
  
  
  ;
- var checkedBoxes = document.querySelectorAll('input[type=checkbox]:checked');
+ var checkedBoxes = document.querySelectorAll('input[name=vehicle]:checked');
  
  var result1 = [];
     for (var i = 0; i < checkedBoxes.length; i++) {
+     alert(checkedBoxes[i]);
         result1.push(checkedBoxes[i].textContent);
     }
  
@@ -46,8 +47,8 @@ document.getElementById("result").innerHTML=text1+"\n and gender = "+text2+"   "
   <input type="radio" name="gender" value="other"> Other<br><br>
   <br>
   <br>
-   <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
-  <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+   <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle" value="Car"> I have a car 
  
    <br>
    <br>
